@@ -1,0 +1,16 @@
+name: Star Trip 8.0.2
+type: theme
+description: 星际旅行网站专用主题。响应式行布局，适用多种设备。
+core: 8.x
+
+libraries:
+  - startrip/global-styling
+regions:
+  header: Header
+  header_slide: Head Slide
+  header_com: Head COM
+  main_menu: Main Menu
+  content: Content
+  sidebar_first: 'Sidebar first'
+  footer: Footer
+  footer1: Footer1

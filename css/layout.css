@@ -1,0 +1,58 @@
+/**
+@layout.css
+布局样式
+右分栏、栅格系统等都属于布局样式。
+ */
+.clearfix:after {
+ content: "." ;
+ display: block ;
+ height: 0 ;
+ clear: both ;
+ visibility: hidden ;
+}
+
+.clearfix{
+ display: inline-block;
+}
+/* Hides from IE-mac */
+*html .clearfix{
+ height:1%;
+}
+.clearfix{
+ display:block;
+}
+/* End hide from IE-mac */
+
+.layout-container {
+ max-width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ width: auto;
+}
+
+.layout-container::after {
+ clear: both;
+ content: "";
+ display: table;
+}
+#header{  background-color: #caedc4;}
+#mainmenu{  background-color: #f2cad2;}
+#content{  background-color: #e3a8e2;}
+#content section{  background-color: #96eff2; width: 1009px;}
+article{  background-color: #ccc;}
+aside{  float: right;  background-color:#91a8e3;  width: 20%;}
+#footer{  background-color: #ddd67e;}
+
+@media screen and (max-width:1024px)  {
+  #content section{}
+  article{ display: none;}
+  aside{width: 20%;}
+  #footer{padding: 8% 5%; margin-bottom: 10px;}
+}
+
+@media screen and (max-width:685px) {
+  #content section{padding: 2%;}
+  article{width: 10%; padding: 5%; }
+  aside{width: 30%;}
+  #footer{padding: 8% 5%; margin-bottom: 100px;}
+}

@@ -1,0 +1,20 @@
+global-styling:
+  version: 1.0
+  css:
+    theme:
+      css/base.css: {}
+      css/layout.css: {}
+      css/module.css: {}
+      css/state.css: {}
+      css/theme.css: {}
+
+home-slider:
+  version: 1.0
+  css:
+    theme:
+      css/full_top.css: {}
+  js:
+    js/jquery.carouFredSel-6.2.1.js: {}
+    js/slide.js: {}
+  dependencies:
+    - core/jquery
